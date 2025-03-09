@@ -1,0 +1,2 @@
+[2025-02-19 14:58:01,204][root][INFO] - Initialize return: {'cameraNearPlane': 0.009999999776482582, 'cameraFarPlane': 20.0}
+[2025-02-19 14:58:14,251][httpx][INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 403 Forbidden"

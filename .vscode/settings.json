@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "/home/ztl/deeplearn/vlmaps_ithor"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "/home/ztl/deeplearn/vlmaps_ithor"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "/home/ztl/deeplearn/vlmaps_ithor"
+    }
+}

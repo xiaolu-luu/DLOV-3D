@@ -1,0 +1,2 @@
+habitat_scene_dir: '/home/ztl/deeplearn/vlmaps_ithor/v1/tasks/mp3d_habitat/mp3d' #"/Users/huang/hcg/projects/vln/data/mp3d"
+vlmaps_data_dir: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset' #"/Users/huang/hcg/projects/vln/data/"

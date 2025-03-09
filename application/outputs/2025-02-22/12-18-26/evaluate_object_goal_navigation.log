@@ -1,0 +1,4 @@
+[2025-02-22 12:18:31,655][root][INFO] - Initialize return: {'cameraNearPlane': 0.009999999776482582, 'cameraFarPlane': 20.0}
+[2025-02-22 12:18:54,769][openai._base_client][INFO] - Retrying request to /chat/completions in 0.923310 seconds
+[2025-02-22 12:18:56,759][httpx][INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-02-22 12:22:48,667][httpx][INFO] - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"

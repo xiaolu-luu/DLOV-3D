@@ -1,0 +1,104 @@
+data_paths:
+  habitat_scene_dir: /home/ztl/deeplearn/vlmaps_ithor/v1/tasks/mp3d_habitat/mp3d
+  vlmaps_data_dir: /home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset
+map_config:
+  map_type: vlmap
+  pose_info:
+    pose_type: mobile_base
+    camera_height: 1
+    base2cam_rot:
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    base_forward_axis:
+    - 0
+    - 0
+    - 1
+    base_left_axis:
+    - 1
+    - 0
+    - 0
+    base_up_axis:
+    - 0
+    - 1
+    - 0
+  cam_calib_mat:
+  - 920.8920288085938
+  - 0.0
+  - 660.1098022460938
+  - 0.0
+  - 918.4155883789062
+  - 370.44232177734375
+  - 0.0
+  - 0.0
+  - 1.0
+  grid_size: ${params.gs}
+  cell_size: ${params.cs}
+  depth_sample_rate: 100
+  dilate_iter: 7
+  gaussian_sigma: 1.0
+  customize_obstacle_map: false
+  potential_obstacle_names:
+  - chair
+  - wall
+  - wall above the door
+  - table
+  - window
+  - floor
+  - stairs
+  - other
+  obstacle_names:
+  - wall
+  - chair
+  - table
+  - window
+  - stairs
+  - other
+  categories: mp3d
+params:
+  gs: 1500
+  cs: 0.03
+  camera_height: -2
+  map_type: vlmaps_lseg_3d
+  forward_dist: 0.05
+  turn_angle: 3
+  sim_setting:
+    default_agent: 0
+    sensor_height: ${params.camera_height}
+    color_sensor: true
+    depth_sensor: false
+    semantic_sensor: false
+    lidar_sensor: false
+    move_forward: ${params.forward_dist}
+    turn_left: ${params.turn_angle}
+    turn_right: ${params.turn_angle}
+    width: 640
+    height: 480
+    enable_physics: false
+    seed: 1
+    lidar_fov: 360
+    depth_img_for_lidar_n: 20
+    img_save_dir: /tmp
+  sound_map_config:
+    map_type: wav2clip
+    detect_mode: retrieval
+  controller_config:
+    gs: ${params.gs}
+    cs: ${params.cs}
+    forward_dist: ${params.forward_dist}
+    turn_angle: ${params.turn_angle}
+    goal_dist_thres: 1
+nav:
+  valid_range: 1
+  vis: true
+  tasks_per_scene: 20
+scene_id: 1
+decay_rate: 0.01
+index_2d: false
+init_categories: true

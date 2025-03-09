@@ -1,0 +1,37 @@
+data:
+  masks:
+    masks_path: '/home/ztl/deeplearning/vlmaps/vlmaps_dataset/vlmaps_dataset/jh4fc5c5qoQ_1/map/mask_gg.pt' #scannet200
+  camera:
+    poses_path: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/poses.txt'
+    intrinsic_path: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/in.txt'
+    intrinsic_resolution: [1080,1080] #[968, 1296]/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/vlmap/vlmaps_f.h5df
+  depths:
+    depths_path: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/depth'
+    depths_ext: '.npy'
+    depth_scale: 1
+  images:
+    images_path: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/rgb'  
+    images_ext: '.png'
+  point_cloud_path: '/home/ztl/deeplearn/vlmaps_ithor/vlmaps_dataset/vlmaps_dataset/FloorPlan_Val1_4/map/scene_pcd_w_sim_colors_gg.ply'
+
+openmask3d:
+  top_k: 3
+  multi_level_expansion_ratio: 0.1
+  num_of_levels: 3
+  vis_threshold: 0.2
+  frequency: 2
+  num_random_rounds: 10
+  num_selected_points: 5
+
+external:
+  sam_checkpoint: '/home/ztl/deeplearning/openmask3d/resources/sam_vit_b_01ec64.pth' #'../openmask3d/resources/sam_vit_h_4b8939.pth'
+  sam_model_type: 'vit_b' #'vit_h'
+  clip_model: 'ViT-L/14@336px'
+
+output:
+  experiment_name: 'experiment'
+  output_directory: 'output-FloorPlan_Val1_4/'
+  save_crops: True
+
+gpu:
+  optimize_gpu_usage: True

@@ -1,0 +1,3 @@
+[2025-02-19 14:11:56,090][root][INFO] - Initialize return: {'cameraNearPlane': 0.009999999776482582, 'cameraFarPlane': 20.0}
+[2025-02-19 14:12:29,292][openai._base_client][INFO] - Retrying request to /chat/completions in 0.955879 seconds
+[2025-02-19 14:12:30,558][openai._base_client][INFO] - Retrying request to /chat/completions in 1.757244 seconds
