@@ -4,7 +4,11 @@ Dual-Level Open-Vocabulary 3D Scene Representation for  Zero-Shot Object Navigat
 we propose a novel **Dual**-**L**evel **O**pen-**V**ocabulary **3D**  (DLOV-3D) scene representation framework to improve robot navigation performance. Our framework integrates both pixel-level and image-level features into spatial scene representations, facilitating a more comprehensive understanding of the scene. By incorporating an adaptive revalidation mechanism, DLOV-3D achieves precise instance-aware navigation based on free-form queries that describe object properties such as color, shape, and object references.
 # Approach
 
-![](.\image\framework.png)
+
+<p align="center">
+    <img src=".\image\framework.png" alt="Framework">
+</p>
+
 # Visual Demo
 - Evaluation in ai2thor
 
